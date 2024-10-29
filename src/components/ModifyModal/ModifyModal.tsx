@@ -17,7 +17,7 @@ const ModifyModal = ({ setIsOpen }: ModifyModalProps) => {
                 <InputContainer>
                     <InputWrapper
                         type='text'
-                        value={newContent}
+                        defaultValue={newContent}
                         onChange={(e) => setNewContent(e.target.value)}
                     />
                 </InputContainer>
