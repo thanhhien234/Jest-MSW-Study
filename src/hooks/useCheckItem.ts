@@ -13,6 +13,7 @@ function useCheckItem() {
 
     if (!res.ok) {
       alert("useCheckItem.ts 에러");
+      return;
     }
 
     getDatas();

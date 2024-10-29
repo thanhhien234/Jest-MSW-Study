@@ -10,6 +10,7 @@ function useDeleteItem() {
 
         if (!res.ok) {
             alert("useDeleteItem.ts 에러");
+            return;
         }
 
         getDatas();

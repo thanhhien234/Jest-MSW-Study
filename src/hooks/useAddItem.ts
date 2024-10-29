@@ -6,7 +6,6 @@ const useAddItem = () => {
     const { getDatas } = useRenderItem();
 
     const handleAddTodo = async () => {
-        console.log('call handleAddTodo');
         if (todo.trim() === '') return;
 
         const res = await fetch('/api/todos', {
@@ -19,6 +18,7 @@ const useAddItem = () => {
 
         if (!res.ok) {
             alert('useAddItem.ts 에러');
+            return;
         }
 
         setTodo('');

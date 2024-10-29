@@ -9,6 +9,7 @@ function useRenderItem() {
         });
         if (!res.ok) {
             alert('useRenderItem.ts 에러');
+            return;
         }
         const data = await res.json();
         setItems(data);

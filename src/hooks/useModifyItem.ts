@@ -18,6 +18,7 @@ function useModifyItem() {
 
     if (!res.ok) {
       alert("useModifyItem.ts 에러");
+      return;
     }
 
     alert('수정되었습니다.');
