@@ -33,7 +33,7 @@ describe('useAddItem test', () => {
 
         const { result } = renderHook(() => useAddItem());
 
-        await act(async() => {
+        act(() => {
             result.current.setTodo('New Todo');
         });
 
@@ -61,7 +61,7 @@ describe('useAddItem test', () => {
 
         const { result } = renderHook(() => useAddItem());
 
-        await act(async() => {
+        act(() => {
             result.current.setTodo('New Todo');
         });
 

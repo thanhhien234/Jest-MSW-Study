@@ -48,7 +48,7 @@ describe('useCheckItem test', () => {
 
         const { result } = renderHook(() => useCheckItem());
 
-        await act(async() => {
+        await act(async() => {  
             await result.current.handleCheckTodo(1);
         });
 

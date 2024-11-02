@@ -50,7 +50,7 @@ describe('useModifyItem test', () => {
 
         const { result } = renderHook(() => useModifyItem());
 
-        await act(async() => {
+        act(() => {
             result.current.setNewContent('New Content');
         });
 
@@ -78,7 +78,7 @@ describe('useModifyItem test', () => {
 
         const { result } = renderHook(() => useModifyItem());
 
-        await act(async() => {
+        act(() => {
             result.current.setNewContent('New Content');
         });
 
